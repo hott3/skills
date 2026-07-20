@@ -1,6 +1,7 @@
 ---
 name: commit-message-ja
-description: Git のコミットメッセージを作成するときに使う。Conventional Commits 形式で、プレフィックスは英小文字の type（feat/fix/refactor/docs/style/test/chore/perf/ci/build/revert）+「: 」、件名・本文の説明部分は日本語で書く。「コミットメッセージを作って」「コミットメッセージ考えて」「コミットして」「commit message」などと言われたとき、またはステージ済みの変更をコミットしようとするときに発動する。
+description: >-
+  Git のコミットメッセージを作成するときに使う。Conventional Commits 形式で、プレフィックスは英小文字の type（feat/fix/refactor/docs/style/test/chore/perf/ci/build/revert）+「: 」、件名・本文の説明部分は日本語で書く。「コミットメッセージを作って」「コミットメッセージ考えて」「コミットして」「commit message」などと言われたとき、またはステージ済みの変更をコミットしようとするときに発動する。
 allowed-tools: Bash Read
 ---
 
