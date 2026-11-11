@@ -1,0 +1,32 @@
+# Draft GitHub Actions workflow for validating Agent Skills.
+name: Lint Agent Skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Analyze Dart scripts
+        run: dart analyze --fatal-infos
+
+      - name: Validate Agent Skills
+        run: dart run tool/validate_skills.dart

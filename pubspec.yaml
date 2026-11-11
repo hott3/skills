@@ -1,0 +1,9 @@
+name: hott3_skills
+description: Personal Agent Skills collection and bridge workflows.
+publish_to: none
+
+environment:
+  sdk: ^3.13.0
+
+dev_dependencies:
+  skills_lint: ^0.5.2

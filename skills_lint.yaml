@@ -1,0 +1,5 @@
+# Configuration for package:skills_lint
+skills_lint:
+  directories:
+    - path: "skills"
+    - path: "skills-for-gemini-web"
